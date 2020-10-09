@@ -1,0 +1,92 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row__posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  max-height: 200px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.row__posterLarge {
+  max-height: 350px;
+  padding: 2px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
+
+.movie__info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.movie__trailer {
+  width: 50%;
+}
+
+.movie__data {
+  width: 500px;
+  padding-top: 30px;
+}
+
+.movie__title {
+  margin-bottom: 30px;
+}
+
+.movie__desc {
+  margin-bottom: 30px;
+}
+
+.watchList__button {
+  cursor: pointer;
+  color: black;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #e6e6e6;
+}
+
+.watchList__button:hover {
+  background-color: #ec3030;
+  color: #000;
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 1100px) {
+  .movie__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .movie__trailer {
+    width: 100%;
+  }
+  .movie__desc {
+    width: 300px;
+  }
+}
